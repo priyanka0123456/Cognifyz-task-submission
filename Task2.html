@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #333;
+            margin-top: 2rem;
+        }
+        p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        .clicker1, .clicker2, .clicker {
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .clicker1 {
+            background-color: #000;
+        }
+        .clicker2 {
+            background-color: #f35d00;
+        }
+        .clicker {
+            background-color: #333;
+        }
+        .clicker:hover, .clicker1:hover, .clicker2:hover {
+            opacity: 0.8;
+        }
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .calculator label {
+            margin: 10px 0 5px;
+        }
+        .calculator input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .Result {
+            margin: 2rem 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 2</h1>
+    
+    <center>
+        <p>The button for color changing</p>
+        <button class="clicker1">
+            Click me
+        </button>
+    </center>
+    <center>
+        <p>The button for alert with current time</p>
+        <button class="clicker2">
+            Alert me
+        </button>
+    </center>
+    <form class="calculator">
+        <label for="first_number">
+            First number
+        </label>
+        <input type="number" id="first_number">
+        <label for="second_number">
+            Second number
+        </label>
+        <input type="number" id="second_number">
+        <input type="submit" class="clicker" value="Calculate">
+    </form>
+    <div class="Result">
+        <h2>Result</h2>
+    </div>
+    <script src="task2.js"></script>
+</body>
+</html>
